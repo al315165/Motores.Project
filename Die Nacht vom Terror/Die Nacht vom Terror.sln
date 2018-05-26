@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Die Nacht vom Terror", "Assembly-CSharp.csproj", "{9937D2D2-1C0E-D025-64F5-7A6B5DBA2736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Die Nacht vom Terror", "Assembly-CSharp-firstpass.csproj", "{C88A29D4-90B1-6D22-51FA-956D5EA04273}"
+EndProject
+Project("{E105224E-DB62-6FB8-965E-D78163F7CD40}") = "Die Nacht vom Terror", "Assembly-UnityScript.unityproj", "{91D11DA4-210B-3E84-5D1B-C31C7EEC3EC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Die Nacht vom Terror", "Assembly-CSharp-Editor-firstpass.csproj", "{23CCBF80-8414-AF9F-F75C-120C4A7340A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9937D2D2-1C0E-D025-64F5-7A6B5DBA2736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9937D2D2-1C0E-D025-64F5-7A6B5DBA2736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9937D2D2-1C0E-D025-64F5-7A6B5DBA2736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9937D2D2-1C0E-D025-64F5-7A6B5DBA2736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C88A29D4-90B1-6D22-51FA-956D5EA04273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C88A29D4-90B1-6D22-51FA-956D5EA04273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C88A29D4-90B1-6D22-51FA-956D5EA04273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C88A29D4-90B1-6D22-51FA-956D5EA04273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D11DA4-210B-3E84-5D1B-C31C7EEC3EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D11DA4-210B-3E84-5D1B-C31C7EEC3EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D11DA4-210B-3E84-5D1B-C31C7EEC3EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D11DA4-210B-3E84-5D1B-C31C7EEC3EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23CCBF80-8414-AF9F-F75C-120C4A7340A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CCBF80-8414-AF9F-F75C-120C4A7340A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CCBF80-8414-AF9F-F75C-120C4A7340A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CCBF80-8414-AF9F-F75C-120C4A7340A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
