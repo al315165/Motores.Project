@@ -4,6 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -48,6 +49,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		public int PlayerHealth = 100;
 		public int MaxPlayerHealth = 100;
 
+		//Game Over Screen Variables
+		public bool isending = false;
+		public Image DeathPanel;
+		public Text DeathText;
+		public float DeathDelay = 1f;
+
+
         // Use this for initialization
         private void Start()
         {
@@ -70,7 +78,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 			if (PlayerHealth <= 0) 
 			{
-				GameOver ();
+				isending = true;
+				DeathPanel.color = Color.Lerp (DeathPanel.color, new Color (DeathPanel.color.r, DeathPanel.color.g, DeathPanel.color.b, 1f),DeathDelay);
+				DeathText.color = Color.Lerp (DeathText.color, new Color (DeathText.color.r, DeathText.color.g, DeathText.color.b, 1f),DeathDelay);
+				Debug.Log("Death Color: " +DeathPanel.color);
+				if (DeathText.color.a >= 0.99f && DeathPanel.color.a >= 0.99f) 
+				{
+					GameOver ();
+				}
 			}
 
             RotateView();
@@ -145,6 +160,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             UpdateCameraPosition(speed);
 
             m_MouseLook.UpdateCursorLock();
+
+
         }
 
 
@@ -273,8 +290,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		public void GameOver() //Needs to be made prettier.
 		{
 			m_MouseLook.SetCursorLock (false);
-			Debug.Log ( "Lock_Cursor: " +m_MouseLook.lockCursor);
-
 			SceneManager.LoadScene (0);
 
 		}
