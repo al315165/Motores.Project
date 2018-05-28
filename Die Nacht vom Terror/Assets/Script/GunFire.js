@@ -7,6 +7,7 @@ public var Player: GameObject;
 var Bullets_Text: Text;
 var gun: GameObject;
 var MuzzleShoot : GameObject;
+var Reload : GameObject;
 
 var Max_ammo: int = 13;
 var  ammo: int = 13;
@@ -32,7 +33,7 @@ shooting = true;
 
 	GameObject.Find("M9").GetComponent(HandGunDamage).Damage();
 	ammo -=1;
-	if (ammo <= 0){ammo = Max_ammo;}
+	if (ammo <= 0){ammo = Max_ammo;GetComponent.<Animation>().Play("gunreload");Reload.SetActive(true);yield WaitForSeconds (1f);Reload.SetActive(false);}
 
 
 	yield WaitForSeconds (shootdelay);
