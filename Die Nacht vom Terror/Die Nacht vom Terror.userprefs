@@ -1,20 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\EnemySpawn.cs">
     <Files>
-      <File FileName="Assets\Script\HandGunDamage.js" Line="1" Column="1" />
-      <File FileName="Assets\Script\CrosshairAnim.js" Line="1" Column="1" />
-      <File FileName="Assets\Script\EnemyScript.js" Line="1" Column="1" />
-      <File FileName="Assets\Script\EnemyAI.cs" Line="1" Column="1" />
-<<<<<<< HEAD
       <File FileName="Assets\Script\Scr_ChangeScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" Line="1" Column="1" />
-=======
-      <File FileName="Assets\Script\Scr_ChangeScreen.cs" Line="4" Column="1" />
-      <File FileName="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" Line="85" Column="65" />
->>>>>>> 1c7e966c641ee57037acb7a72c700665a84c4e7b
-      <File FileName="Assets\Script\GunFire.js" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\EnemySpawn.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\EnemySpawn.cs" Line="69" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

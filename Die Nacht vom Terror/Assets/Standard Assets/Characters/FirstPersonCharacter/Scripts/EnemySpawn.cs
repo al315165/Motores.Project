@@ -54,11 +54,19 @@ public class EnemySpawn : MonoBehaviour {
 			
 
 		if (ronda == 0) {
-			positions.Add (new Vector3 (40, 2, 8));
+			positions.Add (new Vector3 (48, 2, 8));
 
-			positions.Add (new Vector3 (40, 2, 10));
+			positions.Add (new Vector3 (41, 2, -6));
 
-			positions.Add (new Vector3 (40, 2, 6));
+			positions.Add (new Vector3 (-4, 2, -5));
+
+			positions.Add (new Vector3 (11, 2, 9));
+
+			positions.Add (new Vector3 (18, 2, -4));
+
+			positions.Add (new Vector3 (-15, 2, 45));
+
+			positions.Add (new Vector3 (-21, 2, 53));
 
 			Spawn();
 
@@ -84,7 +92,7 @@ public class EnemySpawn : MonoBehaviour {
 
 	private void SpawnHere()
 	{
-		enemy = Instantiate (EnemyModel, positions [Random.Range (0, 3)], Quaternion.identity) as GameObject;
+		enemy = Instantiate (EnemyModel, positions [Random.Range (0, positions.Count)], Quaternion.identity) as GameObject;
 		EnemiesLeft.Add (enemy);
 		enemy.SetActive (true);
 		timer += 1;
