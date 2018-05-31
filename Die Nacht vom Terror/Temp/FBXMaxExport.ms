@@ -26,18 +26,18 @@ fn DialogCallback =
 pluginManager.loadClass FBXIMP;
 pluginManager.loadClass FBXEXP;
 
-openLog "E:/GitHub/2/Motores.Project/Die Nacht vom Terror/Temp/3dsMax.log" mode:"w"
+openLog "C:/Users/User/Desktop/SERGI4~1/Clase/MOTORE~1/MOTORE~1.PRO/DIENAC~1/Temp/3dsMax.log" mode:"w"
 print "Start of log file."; flushLog();
 while true do
 (	
-	if ( fileExists "E:/GitHub/2/Motores.Project/Die Nacht vom Terror/Temp/MaxCommandPipe" ) then
+	if ( fileExists "C:/Users/User/Desktop/SERGI4~1/Clase/MOTORE~1/MOTORE~1.PRO/DIENAC~1/Temp/MaxCommandPipe" ) then
 	(
 		exportNormals = false;
 		exportTangents = false;
 		bakeAnimations = false;
 		useFileUnits = false;
 	
-		waitpipe = (openFile "E:/GitHub/2/Motores.Project/Die Nacht vom Terror/Temp/MaxCommandPipe" mode:"r");
+		waitpipe = (openFile "C:/Users/User/Desktop/SERGI4~1/Clase/MOTORE~1/MOTORE~1.PRO/DIENAC~1/Temp/MaxCommandPipe" mode:"r");
 		filename = (readLine waitpipe);
 		fbxFilename = (readline waitpipe);
 		
@@ -154,7 +154,7 @@ while true do
 					print "After fbx export"; flushLog();
 				)
 
-				deleteFile "E:/GitHub/2/Motores.Project/Die Nacht vom Terror/Temp/MaxCommandPipe";
+				deleteFile "C:/Users/User/Desktop/SERGI4~1/Clase/MOTORE~1/MOTORE~1.PRO/DIENAC~1/Temp/MaxCommandPipe";
 				print "Finished max loading and fbx conversion"; flushLog();
 			) -- with defaultAction
 		)

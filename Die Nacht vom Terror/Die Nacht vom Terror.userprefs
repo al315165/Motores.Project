@@ -1,13 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\EnemySpawn.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Scr_ChangeScreen.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\Script\Scr_ChangeScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\EnemySpawn.cs" Line="69" Column="4" />
-=======
-      <File FileName="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\EnemySpawn.cs" Line="78" Column="4" />
->>>>>>> 63d01d8240d8491da453b12ae6e7bbb153f9319f
+      <File FileName="Assets\Script\Scr_ChangeScreen.cs" Line="14" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

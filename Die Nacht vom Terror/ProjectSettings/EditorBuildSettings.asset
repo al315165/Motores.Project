@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level001.unity
     guid: 7fa2c1ac2e004da4296ed215881cb262
+  - enabled: 1
+    path: Assets/ControlsMenu.unity
+    guid: 11e3bbce3a092d943862e373b1da1867

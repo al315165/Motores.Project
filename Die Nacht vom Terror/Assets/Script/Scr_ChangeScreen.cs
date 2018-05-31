@@ -11,6 +11,7 @@ public class Scr_ChangeScreen : MonoBehaviour {
 
 	void Awake()
 	{
+		Screen.SetResolution (1102, 560, false);
 		Cursor.visible = false;
 	}
 
@@ -27,12 +28,7 @@ public class Scr_ChangeScreen : MonoBehaviour {
 
 	public void ScreenChange(int level)
 	{
-	
-		Scene scene = SceneManager.GetActiveScene();
-		if (scene == SceneManager.GetSceneByBuildIndex(0)) //Si se está en el menú principal, ir al nivel 1
-		{
 			SceneManager.LoadScene(level);
-		}
 	}
 
 	public void QuitGame()
