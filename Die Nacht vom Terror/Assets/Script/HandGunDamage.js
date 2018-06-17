@@ -11,7 +11,7 @@
 		{
 		TargetDistance=Shot.distance;
 			if (TargetDistance<AllowedRange){
-			Shot.transform.SendMessage("DeductPoints",DamageAmount);
+			Shot.transform.SendMessage("DeductPoints",DamageAmount,SendMessageOptions.DontRequireReceiver);
 			}
 		}
 	

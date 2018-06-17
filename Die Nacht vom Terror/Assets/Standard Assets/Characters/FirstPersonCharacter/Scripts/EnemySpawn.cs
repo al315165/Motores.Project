@@ -9,7 +9,7 @@ public class EnemySpawn : MonoBehaviour {
 	public float time = 0.0f;
 	public bool busy = false;
 	public int timer = 0;
-	public int repetition = 0;
+	public int repetition = 0; //the amount of times the spawn function is called in each level.
 
 	public int ronda = 0;
 	public float spawnDelay = 0f;
@@ -72,13 +72,14 @@ public class EnemySpawn : MonoBehaviour {
 
 			} 
 
-		if (timer >= repetition) {CancelInvoke (); timer = 0;}
+		if (timer >= repetition) {CancelInvoke ();}
 		
 		
 	}
 
 	public void Spawn()
 	{
+		timer = 0;
 		ronda += 1;
 		repetition = ronda * 5;
 		Debug.LogWarning ("repetition" + repetition);
