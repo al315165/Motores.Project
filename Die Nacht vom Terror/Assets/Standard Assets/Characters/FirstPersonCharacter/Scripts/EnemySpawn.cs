@@ -54,19 +54,19 @@ public class EnemySpawn : MonoBehaviour {
 			
 
 		if (ronda == 0) {
-			positions.Add (new Vector3 (48, 2, 8));
+			positions.Add (new Vector3 (70, 2, 8)); //70 is the one that determines distance from door.
 
-			positions.Add (new Vector3 (41, 2, -6));
+			positions.Add (new Vector3 (41, 2, -30)); //-30 is the one that determines distance from door.
 
-			positions.Add (new Vector3 (-4, 2, -5));
+			 positions.Add (new Vector3 (-4, 2, -30)); //-30 is the one that determines distance from door.
 
-			positions.Add (new Vector3 (11, 2, 9));
+			positions.Add (new Vector3 (11, 2, 30)); //30 is the one that determines distance from door.
 
-			positions.Add (new Vector3 (18, 2, -4));
+			positions.Add (new Vector3 (18, 2, -20)); //-20 is the one that determines distance from door.
 
-			positions.Add (new Vector3 (-15, 2, 45));
+			positions.Add (new Vector3 (0, 2, 45)); //0 is the one that determines distance from door.
 
-			positions.Add (new Vector3 (-21, 2, 53));
+			positions.Add (new Vector3 (-21, 2, 70)); //80 is the one that determines distance from door.
 
 			Spawn();
 

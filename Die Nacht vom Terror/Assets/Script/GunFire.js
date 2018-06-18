@@ -5,6 +5,10 @@ var shootdelay = 0.5f;
 var SpawnController: GameObject;
 public var Player: GameObject;
 var Bullets_Text: Text;
+var Round_Text: Text;
+var Points_Text:Text;
+var Health_Text:Text;
+
 var gun: GameObject;
 var MuzzleShoot : GameObject;
 var Reload : GameObject;
@@ -17,9 +21,13 @@ var score: int = 0;
 function Awake()
 {
 ammo = Max_ammo;
-Bullets_Text.text = "Salud: "  +  Player.GetComponent(UnityStandardAssets.Characters.FirstPerson.FirstPersonController).PlayerHealth + "/" +
-Player.GetComponent(UnityStandardAssets.Characters.FirstPerson.FirstPersonController).MaxPlayerHealth + " Munición: "+ ammo + " Ronda: " + SpawnController.GetComponent(EnemySpawn).ronda +
-"Puntuación: " + score;
+Bullets_Text.text = " Munición: "+ ammo;
+
+
+Round_Text.text = " Ronda: " + SpawnController.GetComponent(EnemySpawn).ronda;
+Points_Text.text = "Puntuación: " + score;
+Health_Text.text = "Salud: "  +  Player.GetComponent(UnityStandardAssets.Characters.FirstPerson.FirstPersonController).PlayerHealth + "/" +
+Player.GetComponent(UnityStandardAssets.Characters.FirstPerson.FirstPersonController).MaxPlayerHealth;
 }
 
 function Dispara()
@@ -52,9 +60,12 @@ shooting = true;
 function Update()
 {
 
-Bullets_Text.text = "Salud: "  +  Player.GetComponent(UnityStandardAssets.Characters.FirstPerson.FirstPersonController).PlayerHealth + "/" +
-Player.GetComponent(UnityStandardAssets.Characters.FirstPerson.FirstPersonController).MaxPlayerHealth + " Munición: "+ ammo + " Ronda: " + SpawnController.GetComponent(EnemySpawn).ronda +
-" Puntuación: " + score;
+Bullets_Text.text = " Munición: "+ ammo;
+
+Round_Text.text = " Ronda: " + SpawnController.GetComponent(EnemySpawn).ronda;
+Points_Text.text = "Puntuación: " + score;
+Health_Text.text = "Salud: "  +  Player.GetComponent(UnityStandardAssets.Characters.FirstPerson.FirstPersonController).PlayerHealth + "/" +
+Player.GetComponent(UnityStandardAssets.Characters.FirstPerson.FirstPersonController).MaxPlayerHealth;
 
 if (Input.GetButtonDown("Fire1") && shooting == false)
 {
