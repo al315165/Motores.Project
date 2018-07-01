@@ -20,7 +20,7 @@ public GameObject ThePlayer;
 				
                 EnemySpeed = 0.02f;
                 if (AttackTrigger == 0) {
-                    //TheEnemy.GetComponent<Animation> ().Play ("Walking");
+                    TheEnemy.GetComponent<Animation> ().Play ("Walking");
                     transform.position = Vector3.MoveTowards (transform.position, ThePlayer.transform.position, EnemySpeed);
 					//transform.position = new Vector3 (transform.position.x, 2, transform.position.z);
                 }
@@ -33,7 +33,10 @@ public GameObject ThePlayer;
 		{
 			ThePlayer.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().PlayerHealth -= 1;
 		}
-
+		if (TheEnemy.EnemyHealth <= 0) {
+			TheEnemy.GetComponent<Animation> ().Play ("Dying");
+			
+		}
         
     }
 	//prueba commit

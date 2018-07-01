@@ -28,9 +28,11 @@ function RemoveBulletHoles()
 function Update(){
 if (EnemyHealth <= 0)
 	{
+	Gun.GetComponent(GunFire).score += 5;
+	yield WaitForSeconds (5f);
 	Destroy(gameObject);
 	Spawn.GetComponent(EnemySpawn).EnemiesLeft.RemoveAt(0);
-	Gun.GetComponent(GunFire).score += 5;
+
 
 	Debug.Log("Repetition: " + Spawn.GetComponent(EnemySpawn).repetition + " Timer: " + Spawn.GetComponent(EnemySpawn).timer);
 

@@ -1,13 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\GunFire.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\EnemyAI.cs">
     <Files>
-      <File FileName="Assets\Script\Scr_ChangeScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\GunFire.js" Line="68" Column="103" />
-      <File FileName="Assets\Script\HandGunDamage.js" Line="14" Column="8" />
-      <File FileName="Assets\Script\EnemyAI.cs" Line="34" Column="55" />
-      <File FileName="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\EnemySpawn.cs" Line="69" Column="41" />
-      <File FileName="Assets\Script\EnemyScript.js" Line="28" Column="16" />
+      <File FileName="Assets\Script\EnemyAI.cs" Line="12" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
