@@ -31,7 +31,7 @@ public class EnemySpawn : MonoBehaviour {
 	private GameObject BulletHoleInstance;
 
 	public List<GameObject> BulletHoleList = new List<GameObject>();
-
+	public GameObject SonidoZombie;
 
 
 
@@ -47,8 +47,7 @@ public class EnemySpawn : MonoBehaviour {
 
 
 
-		if (time >= spawnDelay) 
-		{
+		if (time >= spawnDelay) {
 			time = 0.0f;
 		}
 			
@@ -58,7 +57,7 @@ public class EnemySpawn : MonoBehaviour {
 
 			positions.Add (new Vector3 (41, 2, -30)); //-30 is the one that determines distance from door.
 
-			 positions.Add (new Vector3 (-4, 2, -30)); //-30 is the one that determines distance from door.
+			positions.Add (new Vector3 (-4, 2, -30)); //-30 is the one that determines distance from door.
 
 			positions.Add (new Vector3 (11, 2, 30)); //30 is the one that determines distance from door.
 
@@ -68,13 +67,21 @@ public class EnemySpawn : MonoBehaviour {
 
 			positions.Add (new Vector3 (-21, 2, 70)); //80 is the one that determines distance from door.
 
-			Spawn();
+			Spawn ();
 
-			} 
+		} 
 
-		if (timer >= repetition) {CancelInvoke ();}
-		
-		
+		if (timer >= repetition) {
+			CancelInvoke ();
+		}
+
+		if (EnemiesLeft.Count == 0){
+			SonidoZombie.SetActive (false);
+	}
+		if (EnemiesLeft.Count != 0){
+			SonidoZombie.SetActive (true);
+		}
+
 	}
 
 	public void Spawn()

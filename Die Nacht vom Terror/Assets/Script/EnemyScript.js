@@ -2,9 +2,11 @@
 var Spawn: GameObject;
 var Gun: GameObject;
 var BulletToRemove : int = 0;
+//var ZombieAnimations : GameObject;
 
 function Awake()
 	{
+	//ZombieAnimations=GameObject.Find("zombie_slow");
 	Spawn = GameObject.Find("EnemySpawnControl");
 	}
 
@@ -29,7 +31,7 @@ function Update(){
 if (EnemyHealth <= 0)
 	{
 	Gun.GetComponent(GunFire).score += 5;
-	yield WaitForSeconds (5f);
+	//ZombieAnimations.GetComponent.<Animation>().Play("Dying");
 	Destroy(gameObject);
 	Spawn.GetComponent(EnemySpawn).EnemiesLeft.RemoveAt(0);
 
